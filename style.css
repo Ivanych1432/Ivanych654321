@@ -1,0 +1,204 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; 
+    color: white; 
+}
+
+
+header {
+    background-color: #111; 
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo span {
+    margin: 0;
+    font-size: 24px;
+    color: #FFA500; 
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #333; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #FFA500; 
+}
+
+
+.slider {
+    width: 80%;
+    height: 60vh;
+    margin: 20px auto;
+    position: relative;
+    background-color: black; 
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #FFA500; 
+}
+
+.slider-container {
+    display: flex;
+    width: 600%; 
+}
+
+.slider-item {
+    width: 16.66%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item img{
+    height: 60vh;  
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 0 1 30%;
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 2 / 1;
+}
+
+
+.about-us, .about-game {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 60vh;             
+    margin-top: 50px;        
+    padding: 20px;
+    background-color: #333; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container, .about-game-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.about-us h2, .about-game h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #FFA500; 
+}
+
+
+.team {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 32px;
+    color: #FFA500; 
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 20px;
+    flex: 0 1 45%;
+}
+
+.member-card {
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #FFA500; 
+}
